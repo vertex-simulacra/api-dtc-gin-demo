@@ -1,13 +1,13 @@
-FROM public.ecr.aws/docker/library/golang:1.21.3-bookworm
+FROM public.ecr.aws/docker/library/alpine:3.18.4
 
 RUN mkdir /app
 
-COPY go-binary /app/gin-gonic/go-binary
+COPY go-binary /app/go-binary
 
-WORKDIR /app/gin-gonic
+WORKDIR /app
 
 EXPOSE 8080
 
-RUN chmod u+x /app/gin-gonic
+USER 65534:65534
 
-ENTRYPOINT ["/app/gin-gonic/go-binary"]
+ENTRYPOINT ["/app/go-binary"]
