@@ -8,7 +8,7 @@ image:
   repository: api-dtc-gin-demo
   pullPolicy: IfNotPresent
   # -- Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "0.0.0-SNAPSHOT.7"
 
 imagePullSecrets:
 # Define secret to pull images. Secret can be provisioned by edp-install or manually.
