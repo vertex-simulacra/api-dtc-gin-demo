@@ -1,1 +1,0 @@
-1. Application api-dtc-gin-demo has been successfully deployed!!
