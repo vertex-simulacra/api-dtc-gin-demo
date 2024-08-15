@@ -7,7 +7,7 @@ COPY go-binary /app/go-binary
 WORKDIR /app
 
 EXPOSE 8080
-#test
+#test 1
 USER 65534:65534
 
 ENTRYPOINT ["/app/go-binary"]
